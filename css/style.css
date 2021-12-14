@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --font-color:#2B2B2B;
+    --background-color:#333333;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--font-color);
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2, h3{
+    color: #848484;
+    line-height: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar{
+    height: 70px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--font-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid var(--font-color);
+}
+
+/* Quote */
+
+
+
+/* Portfolio */
+.portfolio .flex{
+    flex-wrap: wrap;
+}
+
+.portfolio .card{
+    transition: transform 0.3s ease-in;
+}
+
+.portfolio .card:hover{
+    transform: translateY(-3px);
+}
+
+
+/* About */
+.about{
+    border-bottom: 1px solid #bbb;
+}
+
+.about img{
+    width: 200px;
+}
+
+.about p{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Contact */
+.contact ul a{
+    display: block;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in;
+}
+
+.contact ul a:hover{
+    transform: translateY(-3px);
+    color: #2B2B2B;
+}
+
+/* Footer */
+.footer{
+    color: #fff;
+    text-align: center;
+}
+
+.footer a{
+    color: #fff;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* Media Queries */
+/* Tablets */
+@media(max-width:768px){
+    .grid,
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+/* Mobiles */
+@media(max-width:500px){
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+}
